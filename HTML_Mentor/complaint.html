@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Complaint Form</title>
+    <link rel="stylesheet" href="styles/compliant.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Complaint Form</h1>
+    </header>
+
+    <form action="">
+      <article>
+        <h3>Name :</h3>
+        <input type="text" name="name" required spellcheck="true" />
+      </article>
+      <article>
+        <h3>Phone Number :</h3>
+        <input
+          type="number"
+          name="name"
+          required
+          min="6000000000"
+          max="9999999999"
+        />
+      </article>
+      <article>
+        <h3>Email</h3>
+        <input type="email" required />
+      </article>
+
+      <article>
+        <h2>Address</h2>
+        <textarea name="address" id="" cols="80" rows="10"></textarea>
+      </article>
+
+      <article>
+        <h3>Choose the issue type!</h3>
+        <p>Check atleast one box without fail</p>
+
+        <input type="checkbox" name="c1" value="Wrong News" />
+        <label for="c1">Wrong News</label>
+        <br />
+        <input type="checkbox" name="c2" value="Paper not given" />
+        <label for="c2">Paper not given</label>
+        <br />
+        <input type="checkbox" name="c2" value="Paper boy misbehaved" />
+        <label for="c2">Paper boy misbehaved</label>
+      </article>
+      <article>
+          <h3>Describe your issue</h3>
+          <textarea name="description" id="description" cols="80" rows="10"></textarea>
+      </article>
+
+      <input type="reset" value="Clear Fields" />
+      <input type="submit" value="Submit Greivience" />
+    </form>
+  </body>
+</html>

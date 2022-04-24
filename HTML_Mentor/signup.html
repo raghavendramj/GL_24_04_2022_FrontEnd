@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Sign Up Page!</title>
+    <link rel="stylesheet" href="styles/signup.css" />
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4" />
+        Your Browser does not support HTML 5 Video
+    </video>
+
+    <div class="signin">
+        <h2>Sign Up</h2>
+        <form action="login.html">
+            <label for="firstName"> First Name : </label>
+            <input type="text" name="firstName" placeholder="Enter firstName" required />
+            <br />
+            <label for="lastName"> Last Name : </label>
+            <input type="text" name="lastName" placeholder="Enter LastName" required />
+            <br />
+            <label for="email"> Email Id : </label>
+            <input type="email" name="email" placeholder="Enter email" required />
+            <br />
+            <label for="userName"> Username : </label>
+            <input type="text" name="userName" placeholder="Enter username of your choice" required />
+            <br />
+            <label for="password"> Password : </label>
+            <input type="password" name="password" placeholder="Enter Password" minlength="8" required />
+            <br />
+            <label for="repassword"> Re-enter Password : </label>
+            <input type="password" name="repassword" placeholder="Re-Enter Password" minlength="8" required />
+
+            <button onclick="alert('Successfully Registered!');">Sign Up</button>
+        </form>
+    </div>
+</body>
+
+</html>

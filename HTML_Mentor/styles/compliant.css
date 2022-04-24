@@ -1,0 +1,93 @@
+/* simple selector */
+body {
+  background-color: rgb(253, 243, 223);
+}
+header {
+  border-radius: 5px;
+  height: auto;
+  text-align: center;
+  background-color: rgb(192, 149, 233);
+}
+footer {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+p,
+h1 {
+  padding: 10px;
+  margin: 0%;
+}
+section {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 50%;
+}
+article {
+  min-width: 300px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+  background-color: white;
+  /* background-color: tomato; */
+}
+input {
+  width: 300px;
+  border: none;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  height: 30px;
+}
+input,
+label,
+h3,
+#district {
+  font-size: 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+button {
+  display: block;
+  margin: 20px;
+  width: 80px;
+  border-radius: 4px;
+  height: 30px;
+  color: white;
+  font-size: 18px;
+  float: right;
+  border: none;
+  background-color: rgb(175, 102, 243);
+}
+#district {
+  height: 50px;
+}
+/* combinator selector */
+header p {
+  text-align: left;
+}
+article h3 {
+  font-family: Helvetica;
+  letter-spacing: 2px;
+}
+
+/* pseudo class selector */
+input:focus {
+  outline: none !important;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/* pseudo element selector */
+header p::first-line {
+  font-weight: bold;
+  color: rgb(76, 0, 255);
+}
+article h3::after {
+  content: "*";
+  color: red;
+}
+/* attribute selector */
+input[name^="option"] {
+  width: 20px;
+  height: 20px;
+}

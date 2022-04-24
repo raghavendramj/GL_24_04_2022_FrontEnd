@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles/login.css" />
+</head>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4" />
+        Your Browser does not support HTML 5 Video
+    </video>
+
+    <div class="login">
+        <h2>Log In</h2>
+        <form action="home.html">
+            <label for="userName"> Username : </label>
+            <input type="text" name="userName" placeholder="Enter username" required />
+            <br />
+            <label for="password"> Password : </label>
+            <input type="password" name="password" placeholder="Enter Password" minlength="8" required />
+
+            <a href="signup.html">No Account? | Sign up</a>
+            <button onclick="alert('Logged in successfully!')">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
